@@ -1,0 +1,5 @@
+{"image":"example_a.png","width":640,"height":512,"boxes":[],"classes":[],"confidences":[]}
+{"image":"example_b.png","width":640,"height":512,"boxes":[[10,10,20,20]],"classes":[0],"confidences":[0.1]}
+{"image":"example_c.png","width":640,"height":512,"boxes":[[10,10,20,20],[30,30,40,40]],"classes":[0,0],"confidences":[0.1,0.2]}
+{"image":"example_d.png","width":640,"height":512,"boxes":[[10,10,50,50]],"classes":[0],"confidences":[0.9]}
+{"image":"example_e.png","width":640,"height":512,"boxes":[[10,10,26,26]],"classes":[0],"confidences":[0.25]}

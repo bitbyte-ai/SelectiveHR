@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "selectivehr"
+version = "0.1.0"
+description = "Output-guided resolution allocation for thermal small-object detection"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+analysis = ["pandas>=2,<3", "scipy>=1.10,<2", "Pillow>=10", "PyYAML>=6", "scikit-learn>=1.2"]
+detector = ["ultralytics==8.4.138"]
+test = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+include = ["selectivehr*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "code/scripts"]

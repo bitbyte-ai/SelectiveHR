@@ -1,0 +1,128 @@
+[
+  {
+    "source": "code/scripts/audit_selective_hr_zero_training.py",
+    "target": "code/scripts/audit_selective_hr_zero_training.py",
+    "source_sha256": "43c1306ef889d7e63bafe0db888e6597ebe62d8ed1542f559f88f8ab47250382",
+    "release_sha256": "0c76ba4ee0cc200504f1c528d643dad28fdbdbf348c02c885854f9112ef266b6",
+    "adaptation": "metric helper import renamed; algorithm unchanged"
+  },
+  {
+    "source": "code/scripts/transfer_selective_hr_s4.py",
+    "target": "code/scripts/transfer_selective_hr_s4.py",
+    "source_sha256": "7d397b7053bff536ffe38795a41acf5aa69dcd3a1511b045a64edf81faa2a22b",
+    "release_sha256": "fd107fd4855fd4a89ef7c4cb71f46eee35200c6667640619462b1be267c12c7d",
+    "adaptation": "verbatim text; accepts frozen normalization JSON by default; source CSV remains an optional legacy input; scoring unchanged"
+  },
+  {
+    "source": "code/scripts/bootstrap_selective_hr_deltas.py",
+    "target": "code/scripts/bootstrap_selective_hr_deltas.py",
+    "source_sha256": "27193a6491a81531638c470460eb64ec8d0b6285bca3726c94717a1803b8795e",
+    "release_sha256": "4ec3215bca943b578adae03455e89b103eea30d3e1560f3d2624ced62bf3091a",
+    "adaptation": "metric helper import renamed; algorithm unchanged"
+  },
+  {
+    "source": "code/scripts/export_flir_val_failure_evidence.py",
+    "target": "code/scripts/export_flir_val_failure_evidence.py",
+    "source_sha256": "3fb10802eb1f9fca67d5edc52584f360cadd8d042a8258c71cd0f5dd1ce1ea8c",
+    "release_sha256": "3fb10802eb1f9fca67d5edc52584f360cadd8d042a8258c71cd0f5dd1ce1ea8c",
+    "adaptation": "verbatim text"
+  },
+  {
+    "source": "code/scripts/prepare_flir_failure_metadata.py",
+    "target": "code/scripts/prepare_flir_failure_metadata.py",
+    "source_sha256": "0c2555c98610938f0ec68f06fe0ff197e8dd7558cd11604061be56941bb5a9d4",
+    "release_sha256": "0c2555c98610938f0ec68f06fe0ff197e8dd7558cd11604061be56941bb5a9d4",
+    "adaptation": "verbatim text"
+  },
+  {
+    "source": "code/scripts/run_ultralytics_train_config.py",
+    "target": "code/scripts/run_ultralytics_train_config.py",
+    "source_sha256": "9f974851b42a7d9ece9e1cba0ce5770fafbe02f44172b75f93c834696e29853d",
+    "release_sha256": "9f974851b42a7d9ece9e1cba0ce5770fafbe02f44172b75f93c834696e29853d",
+    "adaptation": "verbatim text"
+  },
+  {
+    "source": "code/scripts/convert_flir_v2_ms9_to_yolo.py",
+    "target": "code/scripts/convert_flir_v2_ms9_to_yolo.py",
+    "source_sha256": "3739e5c1ba771354cea9384ee94d6c45fa16901fa50fab752f4edbea050043b0",
+    "release_sha256": "f85aedd6b7072d7d12601829618fe0ef4b019d9009d5d849aba4711ae0d5f188",
+    "adaptation": "public converter processes train/val only; historical test split mapping and YAML entry omitted; conversion rules unchanged"
+  },
+  {
+    "source": "code/scripts/analyze_chrqa_oracle.py",
+    "target": "code/scripts/frozen_detection_metrics.py",
+    "source_sha256": "5b15dbb4b5449516604f74446992c788715bf24b4db0878733044226c144d4d4",
+    "release_sha256": "5c469d1ec681cb7ce0117b3a2576f8287595d8e9c4cfcb4c631c8bdf52a32e10",
+    "adaptation": "four metric functions extracted verbatim; unrelated historical oracle omitted"
+  },
+  {
+    "source": "tests/test_transfer_selective_hr_s4.py",
+    "target": "tests/test_transfer_selective_hr_s4.py",
+    "source_sha256": "fb68a51c843b9cf48a4f7dfb74a2756e9abddf0ff3405932b961bbbbc1ed5869",
+    "release_sha256": "fb68a51c843b9cf48a4f7dfb74a2756e9abddf0ff3405932b961bbbbc1ed5869",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "tests/test_export_flir_val_failure_evidence.py",
+    "target": "tests/test_export_flir_val_failure_evidence.py",
+    "source_sha256": "87d9358803879f7296fa6d422cd231dc1ee2c4fd45004b3ea136230962da539c",
+    "release_sha256": "87d9358803879f7296fa6d422cd231dc1ee2c4fd45004b3ea136230962da539c",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "experiments/configs/P1-Y11N-FLIR-BASELINE-S42.yaml",
+    "target": "experiments/configs/P1-Y11N-FLIR-BASELINE-S42.yaml",
+    "source_sha256": "c0417b3523100b5bcdd9bf29c7d448f90f6ec5c4705cc8bb08d12f18a1ecbd8b",
+    "release_sha256": "c0417b3523100b5bcdd9bf29c7d448f90f6ec5c4705cc8bb08d12f18a1ecbd8b",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "experiments/configs/P9-Y11N-FLIR-BASELINE-S123.yaml",
+    "target": "experiments/configs/P9-Y11N-FLIR-BASELINE-S123.yaml",
+    "source_sha256": "b9d2bcd6d198161e25da8a004d43c638c9e83e7a16072d800c2dac8da6314d06",
+    "release_sha256": "b9d2bcd6d198161e25da8a004d43c638c9e83e7a16072d800c2dac8da6314d06",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "experiments/configs/P12-Y11N-FLIR-BASELINE-S2027.yaml",
+    "target": "experiments/configs/P12-Y11N-FLIR-BASELINE-S2027.yaml",
+    "source_sha256": "5e836f1c0e675ebc56ce3d6a6e40d335d6245c3d0d574f2726547d5ef60ec587",
+    "release_sha256": "5e836f1c0e675ebc56ce3d6a6e40d335d6245c3d0d574f2726547d5ef60ec587",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "experiments/configs/P1-Y8N-FLIR-BASELINE-S42.yaml",
+    "target": "experiments/configs/P1-Y8N-FLIR-BASELINE-S42.yaml",
+    "source_sha256": "537cc9a7dcb2732b684b8acac3471218d2c9f64513343b36c9666c8a1d786f37",
+    "release_sha256": "537cc9a7dcb2732b684b8acac3471218d2c9f64513343b36c9666c8a1d786f37",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "experiments/configs/P13-Y8N-FLIR-BASELINE-S123.yaml",
+    "target": "experiments/configs/P13-Y8N-FLIR-BASELINE-S123.yaml",
+    "source_sha256": "cf63a4f0cf80b16c4a7a4332948041e885124440e2654302ed1645aa8b1b88de",
+    "release_sha256": "cf63a4f0cf80b16c4a7a4332948041e885124440e2654302ed1645aa8b1b88de",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "experiments/configs/P14-Y8N-FLIR-BASELINE-S2027.yaml",
+    "target": "experiments/configs/P14-Y8N-FLIR-BASELINE-S2027.yaml",
+    "source_sha256": "282f0252f3c377fe53b8507756f2f04936b866365042679f7c5f03e121a173da",
+    "release_sha256": "282f0252f3c377fe53b8507756f2f04936b866365042679f7c5f03e121a173da",
+    "adaptation": "verbatim"
+  },
+  {
+    "source": "code/configs/flir_adas_v2.yaml",
+    "target": "code/configs/flir_adas_v2.yaml",
+    "source_sha256": "f0c96931b42f73362ad0882c122ce0e2d3cd08f05d5ff297645a31a5be5e2785",
+    "release_sha256": "8cde3698b8a735a98fd7c16195ad5e3ea2eccbe8f6cc4c5fe7821477736a4c61",
+    "adaptation": "local path replaced by explicit user configuration placeholder"
+  },
+  {
+    "source": "paper/selective_hr/78_yolov8n_frozen_transfer_summary.json",
+    "target": "configs/source_normalization.json",
+    "source_sha256": "16717a617933e043715d347c7d40d922e1874c147c4bce342b273be4493d2e0b",
+    "release_sha256": "90b2727be1c50aa78b852f3404886a7841f02eeee9933bc0223008ee7c1c91dd",
+    "adaptation": "frozen normalization extracted without numerical changes"
+  }
+]
